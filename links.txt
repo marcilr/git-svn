@@ -8,5 +8,10 @@ git-svn related links
 
 Links
 =====
+Converting a Subversion repository to Git
+Submitted by John on Tue, 2010/08/31 - 9:58pm
+(7 steps to migrate a complete mirror of svn in git)
+https://john.albin.net/git/convert-subversion-to-git
+
 git-svn - Bidirectional operation between a Subversion repository and Git
 https://git-scm.com/docs/git-svn
