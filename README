@@ -5,9 +5,15 @@ by Raymond E. Marcil <marcilr@gmail.com>
 
 Links
 =====
+examples/
+  Examples
+
 git-svn.txt
   git-svn - Bidirectional operation between a Subversion repository and Git
   https://git-scm.com/docs/git-svn
+
+index.html
+  Index for git-svn
 
 links.txt
   git-svn related links
