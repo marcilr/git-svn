@@ -41,22 +41,9 @@ by Raymond E. Marcil &lt;marcilr@gmail.com&gt;
 <table width="80%">
 <tr><td valign="top">
     
+
+<h2>git svn clone</h2>
 <p>
-  git svn examples
-</p>
-
-
-<h2>Convert part of svn repository to git</h2>
-
-<p>
-  git svn clone http://example.com/svn/project/folder<br>
-  --no-minimize-url --no-metadata -A authors-transform.txt<br>
-  folder<br>
-  --<a href="https://sleepycode.com/2011/10/converting-part-of-a-svn-repository-to-git/">sleepycode.com/2011/10/converting-part...</a>
-</p>
-
-<p>
-  git svn clone works:<br>
 <blockquote>
   $ git svn clone file:///home/remarcil/svn/tomcat<br>
 Initialized empty Git repository in /usr/local/src/tomcat/.git/<br>
@@ -76,6 +63,15 @@ r3 = 21bb8e215b6fa7f6b942621d6d305a536609a005 (refs/remotes/git-svn)<br>
 
 <p>
 NOTE: This checkout out everything under the tomcat/ directory.
+</p>
+
+<h2>Convert part of svn repository to git</h2>
+
+<p>
+  git svn clone http://example.com/svn/project/folder<br>
+  --no-minimize-url --no-metadata -A authors-transform.txt<br>
+  folder<br>
+  --<a href="https://sleepycode.com/2011/10/converting-part-of-a-svn-repository-to-git/">sleepycode.com/2011/10/converting-part...</a>
 </p>
 
 </td></tr>
