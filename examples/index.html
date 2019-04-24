@@ -55,6 +55,29 @@ by Raymond E. Marcil &lt;marcilr@gmail.com&gt;
   --<a href="https://sleepycode.com/2011/10/converting-part-of-a-svn-repository-to-git/">sleepycode.com/2011/10/converting-part...</a>
 </p>
 
+<p>
+  git svn clone works:<br>
+<blockquote>
+  $ git svn clone file:///home/remarcil/svn/tomcat<br>
+Initialized empty Git repository in /usr/local/src/tomcat/.git/<br>
+W: +empty_dir: branches<br>
+W: +empty_dir: tags<br>
+W: +empty_dir: trunk<br>
+r1 = f3b43bfe8cae161ee2d65c8a1390b2711414c4de (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A	trunk/CVSROOT/common/tools/daemon/daemon.c<br>
+r2 = 282dd10ca3f823903a975a2aa1aa49b9ea094ae3 (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A	trunk/CVSROOT/gis/adt/list/List.h<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A	trunk/CVSROOT/gis/adt/list/List.c<br>
+r3 = 21bb8e215b6fa7f6b942621d6d305a536609a005 (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;M	trunk/CVSROOT/gis/adt/list/List.h<br>
+...<br>
+</blockquote>
+</p>
+
+<p>
+NOTE: This checkout out everything under the tomcat/ directory.
+</p>
+
 </td></tr>
 
 <!-- ====================== Links ===================== -->
