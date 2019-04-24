@@ -44,7 +44,7 @@ by Raymond E. Marcil &lt;marcilr@gmail.com&gt;
 
 <h2>git svn clone</h2>
 <p>    
-This checkout pulls everything under the  tomcat/ directory.<br>
+This checkout pulls everything under the tomcat/ directory.<br>
 <blockquote>
   $ git svn clone file:///home/remarcil/svn/tomcat<br>
 Initialized empty Git repository in /usr/local/src/tomcat/.git/<br>
@@ -58,6 +58,26 @@ r2 = 282dd10ca3f823903a975a2aa1aa49b9ea094ae3 (refs/remotes/git-svn)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;A	trunk/CVSROOT/gis/adt/list/List.c<br>
 r3 = 21bb8e215b6fa7f6b942621d6d305a536609a005 (refs/remotes/git-svn)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;M	trunk/CVSROOT/gis/adt/list/List.h<br>
+...<br>
+</blockquote>
+</p>
+
+<p>    
+  This checkout pulls everything under the tomcat/ directory
+  (added /trunk to above).<br>
+<blockquote>
+$ git svn clone file:///home/remarcil/svn/tomcat/trunk<br>
+Initialized empty Git repository in /usr/local/src/trunk/.git/<br>
+r1 = ed27aadd8253dd5746640d8a160a2fbd176443eb (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A	CVSROOT/common/tools/daemon/daemon.c<br>
+r2 = 99275ebfd618d8b62fd2c18417a0c256ea338cf1 (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A	CVSROOT/gis/adt/list/List.h<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A	CVSROOT/gis/adt/list/List.c<br>
+r3 = ed3001993611de5d3f6ed5bb05cb9f19526395e5 (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;M	CVSROOT/gis/adt/list/List.h<br>
+r4 = fde101c50fd83286bda19ae1395866ed5c6c25c9 (refs/remotes/git-svn)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;M	CVSROOT/gis/adt/list/List.h<br>
+&nbsp;&nbsp;&nbsp;&nbsp;M	CVSROOT/gis/adt/list/List.c<br>
 ...<br>
 </blockquote>
 </p>
