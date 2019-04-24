@@ -44,8 +44,10 @@ by Raymond E. Marcil &lt;marcilr@gmail.com&gt;
 
 <h2>git svn clone</h2>
 <p>    
-This checkout pulls everything under the tomcat/ directory.<br>
-<blockquote>
+  This checkout pulls everything under the tomcat/ directory.
+</p>
+  
+<p style="font-family: 'Courier New';">
   $ git svn clone file:///home/remarcil/svn/tomcat<br>
 Initialized empty Git repository in /usr/local/src/tomcat/.git/<br>
 W: +empty_dir: branches<br>
@@ -59,13 +61,12 @@ r2 = 282dd10ca3f823903a975a2aa1aa49b9ea094ae3 (refs/remotes/git-svn)<br>
 r3 = 21bb8e215b6fa7f6b942621d6d305a536609a005 (refs/remotes/git-svn)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;M	trunk/CVSROOT/gis/adt/list/List.h<br>
 ...<br>
-</blockquote>
 </p>
 
 <p>    
   This checkout pulls everything under the tomcat/ directory
   (added /trunk to above).<br>
-<blockquote>
+<p style="font-family: 'Courier New';">
 $ git svn clone file:///home/remarcil/svn/tomcat/trunk<br>
 Initialized empty Git repository in /usr/local/src/trunk/.git/<br>
 r1 = ed27aadd8253dd5746640d8a160a2fbd176443eb (refs/remotes/git-svn)<br>
@@ -79,23 +80,42 @@ r4 = fde101c50fd83286bda19ae1395866ed5c6c25c9 (refs/remotes/git-svn)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;M	CVSROOT/gis/adt/list/List.h<br>
 &nbsp;&nbsp;&nbsp;&nbsp;M	CVSROOT/gis/adt/list/List.c<br>
 ...<br>
-</blockquote>
 </p>
 
 <h2>Convert part of svn repository to git</h2>
 
 <p>
+The repository directory to be checked out can be
+specified in the latter part of the repo URL.
+</p>
+
+<p style="font-family: 'Courier New';">
   git svn clone http://example.com/svn/project/folder<br>
   --no-minimize-url --no-metadata -A authors-transform.txt<br>
-  folder<br>
-  --<a href="https://sleepycode.com/2011/10/converting-part-of-a-svn-repository-to-git/">sleepycode.com/2011/10/converting-part...</a>
+  folder.<a href="#L1">[1]</a>
+</p>
+
+<p>
+  This clones the tdms directory in the svntom repo:
+</p>
+<p style="font-family: 'Courier New';">
+$ git svn clone file:///home/remarcil/svn/tomcat/trunk/tdms<br>
+Initialized empty Git repository in /usr/local/src/tdms/.git/<br>
+W: Ignoring error from SVN, path probably does not exist: (160013): Filesystem has no item: File not found: revision 100, path '/trunk/tdms'<br>
+W: Do not be alarmed at the above message git-svn is just searching aggressively for old history.<br>
+This may take a while on large repositories<br>
+Checked Ahrough projects/tracks/docs/notes/project_charter.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;projects/tracks/docs/notes/tracks_schedule.txt<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;projects/tracks/docs/notes/blm_doc_subtypes.csv<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;projects/tracks/docs/notes/security_layer.txt<br>
+...<br>
 </p>
 
 <p>
   &quot;If you're trying to copy the entire history,
   and using git svn clone --stdlayout just use the URL
   that you would use to checkout the trunk with svn
-  minus the /trunk portion at the end.&quot;<a href="#L1">[1]</a>
+  minus the /trunk portion at the end.&quot;<a href="#L2">[2]</a>
 
 </td></tr>
 
@@ -113,19 +133,19 @@ r4 = fde101c50fd83286bda19ae1395866ed5c6c25c9 (refs/remotes/git-svn)<br>
 
 <h2>Links</h2>
 
-<p id="L1">
-  [1] git - how can I clone local svn repository?<br>
-  <a href="https://stackoverflow.com/questions/15374353/git-how-can-i-clone-local-svn-repository">https://stackoverflow.com/questions/15374353/git-how-can-i-clone-local-svn-repository</a>
-<p/>
-    
     
 <!-- === Converting part of a svn repository to git === -->
-<p>
-  <b>Converting part of a svn repository to git</b><br>
+<p id="L1">
+  [1] Converting part of a svn repository to git<br>
   by Jeremy<br>
   <a href="https://sleepycode.com/2011/10/converting-part-of-a-svn-repository-to-git/">https://sleepycode.com/2011/10/converting-part...</a>
 </p>
 
+<p id="L2">
+  [2] git - how can I clone local svn repository?<br>
+  <a href="https://stackoverflow.com/questions/15374353/git-how-can-i-clone-local-svn-repository">https://stackoverflow.com/questions/15374353/git-how-can-i-clone-local-svn-repository</a>
+<p/>
+    
 
 <!-- ================= End Left Column ================ -->
 <!-- ================= End Left Column ================ -->
